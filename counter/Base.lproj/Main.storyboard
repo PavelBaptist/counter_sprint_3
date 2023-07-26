@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kcW-au-I4Q">
-                                <rect key="frame" x="57" y="240" width="112" height="198"/>
+                                <rect key="frame" x="57" y="218" width="126" height="198"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted">
@@ -30,7 +30,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1bS-lN-kuq">
-                                <rect key="frame" x="224" y="240" width="112" height="198"/>
+                                <rect key="frame" x="210" y="218" width="126" height="198"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted">
@@ -63,8 +63,16 @@
                                     <action selector="btnResetDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uIk-EN-4l1"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="iue-V7-es8">
+                                <rect key="frame" x="16" y="463" width="361" height="218"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sct-xy-BCR">
-                                <rect key="frame" x="72" y="793" width="250" height="35"/>
+                                <rect key="frame" x="8" y="793" width="377" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Техническая информация...."/>
@@ -72,14 +80,6 @@
                                     <action selector="btnInfoDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Ze-lw-p8H"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="lorem ipsum" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="iue-V7-es8">
-                                <rect key="frame" x="57" y="463" width="279" height="218"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="labelColor"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -87,6 +87,7 @@
                     <connections>
                         <outlet property="counterUILabel" destination="KpY-wq-7N9" id="371-3V-g7L"/>
                         <outlet property="infoUIButton" destination="Sct-xy-BCR" id="lXI-1p-DjO"/>
+                        <outlet property="logUITextView" destination="iue-V7-es8" id="hR3-Yy-XV5"/>
                         <outlet property="minusUIButton" destination="kcW-au-I4Q" id="mdH-b1-NKf"/>
                         <outlet property="plusUIButton" destination="1bS-lN-kuq" id="S7I-AT-4Sv"/>
                         <outlet property="resetUIButton" destination="g30-87-uNz" id="T9j-eI-imB"/>
